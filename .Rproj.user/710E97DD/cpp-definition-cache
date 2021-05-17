@@ -1,0 +1,26 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 11,
+                "file" : "D:/Google Drive/R/Packages/HestonEMcpp/src/Y.euler.sim.fix.cpp",
+                "kind" : 6,
+                "line" : 8,
+                "name" : "mvrnormrcpp(arma::vec, arma::mat, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@mvrnormrcpp#$@N@arma@C@Col>#d#$@N@arma@C@Mat>#d#I#"
+            },
+            {
+                "column" : 11,
+                "file" : "D:/Google Drive/R/Packages/HestonEMcpp/src/Y.euler.sim.fix.cpp",
+                "kind" : 6,
+                "line" : 25,
+                "name" : "Y_euler_sim_cpp(arma::mat, int, int, double, arma::vec, double, double, double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@Y_euler_sim_cpp#$@N@arma@C@Mat>#d#I#I#d#$@N@arma@C@Col>#d#d#d#d#d#d#"
+            }
+        ],
+        "file" : "D:/Google Drive/R/Packages/HestonEMcpp/src/Y.euler.sim.fix.cpp",
+        "file_last_write" : 1620672846
+    }
+]

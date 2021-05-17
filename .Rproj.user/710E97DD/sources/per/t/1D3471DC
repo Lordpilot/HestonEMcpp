@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1620672663785.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3577953138",
+    "id" : "1D3471DC",
+    "lastKnownWriteTime" : 1620672846,
+    "last_content_update" : 1620672846062,
+    "path" : "D:/Google Drive/R/Packages/HestonEMcpp/src/Y.euler.sim.fix.cpp",
+    "project_path" : "src/Y.euler.sim.fix.cpp",
+    "properties" : {
+        "cursorPosition" : "22,0",
+        "scrollLine" : "11"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}
