@@ -40,10 +40,9 @@ arma::mat Y_euler_sim_cpp(arma::mat B, int n,
     
     for(int i = 1; i < n+1; i++){
         Y(i,0) = Y(i-1,0) + 
-            r*mesh_dist[i-1] + 
-            sqrt(Y(i-1,1))*(sqrt(1-pow(rho,2))*B_inc(i-1,0) + rho*B_inc(i-1,1));
-        
-        Y(i,1) = Y(i-1,1) + (alpha - lambda*Y(i-1,1))*mesh_dist[i-1] + sigmaV*sqrt(Y(i-1,1))*B_inc(i-1,1);
+            Y(i-1,0)*r*mesh_dist[i-1] + 
+            Y(i-1,0)*sqrt(Y(i-1,1))*(sqrt(1-pow(rho,2))*B_inc(i-1,0) + rho*B_inc(i-1,1));
+            Y(i,1) = Y(i-1,1) + (alpha - lambda*Y(i-1,1))*mesh_dist[i-1] + sigmaV*sqrt(Y(i-1,1))*B_inc(i-1,1);
     }
     
     
