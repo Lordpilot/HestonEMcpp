@@ -6,19 +6,6 @@
 
 using namespace Rcpp;
 
-// mvrnormrcpp
-arma::mat mvrnormrcpp(arma::vec mu, arma::mat Sigma, int n);
-RcppExport SEXP _HestonEMcpp_mvrnormrcpp(SEXP muSEXP, SEXP SigmaSEXP, SEXP nSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< arma::vec >::type mu(muSEXP);
-    Rcpp::traits::input_parameter< arma::mat >::type Sigma(SigmaSEXP);
-    Rcpp::traits::input_parameter< int >::type n(nSEXP);
-    rcpp_result_gen = Rcpp::wrap(mvrnormrcpp(mu, Sigma, n));
-    return rcpp_result_gen;
-END_RCPP
-}
 // Y_euler_sim_cpp
 arma::mat Y_euler_sim_cpp(arma::mat B, int n, int t, double Tt, arma::vec y0, double r, double alpha, double lambda, double sigmaV, double rho);
 RcppExport SEXP _HestonEMcpp_Y_euler_sim_cpp(SEXP BSEXP, SEXP nSEXP, SEXP tSEXP, SEXP TtSEXP, SEXP y0SEXP, SEXP rSEXP, SEXP alphaSEXP, SEXP lambdaSEXP, SEXP sigmaVSEXP, SEXP rhoSEXP) {
@@ -41,7 +28,6 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_HestonEMcpp_mvrnormrcpp", (DL_FUNC) &_HestonEMcpp_mvrnormrcpp, 3},
     {"_HestonEMcpp_Y_euler_sim_cpp", (DL_FUNC) &_HestonEMcpp_Y_euler_sim_cpp, 10},
     {NULL, NULL, 0}
 };
